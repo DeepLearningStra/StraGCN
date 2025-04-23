@@ -14,7 +14,7 @@
 * StraGCN/ : contain the `StraGCN` implementation.
 ## Implementation
 ### Install environment
-* Install `conda` on system
+* Install conda on system
 * Create conda environment
 ```
 conda create -n env_name python=3.9
