@@ -2,7 +2,7 @@
 
 ## Hardware
 * CPU x86_64 with host memory >= 32GB. (Test on Intel Xeon Gold 5220 (16 cores) CPU with 128GB host memory)
-* NVIDIA GPU (arch>=sm_60) with device memory >= 16GB. We mainly evaluate our design pn RTX 4090.
+* NVIDIA GPU (arch>=sm_60) with device memory >= 16GB. We mainly evaluate our design on RTX 4090.
 ## OS & Compiler
 * `Ubuntu 22.04+`
 * `GCC >= 9.0`
