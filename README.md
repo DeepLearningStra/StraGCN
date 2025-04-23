@@ -34,11 +34,11 @@ pip install torch requests
 ```
 * Install StraGCN
 ```
-go to `StraGCN/` and run `python setup.py install` to install StraGCN modules
+Go to `StraGCN/`, then run `python setup.py install` to install StraGCN modules
 ```
 * Install GNNA
 ```
-Go to `GNNAdvisor/GNNConv`, then `python setup.py install` to install the GNNAdvisor modules.
+Go to `GNNAdvisor/GNNConv`, then run `python setup.py install` to install the GNNAdvisor modules.
 ```
 ### Download the graph datasets
 * Our preprocessed graph datasets in .npy format can be downloaded via `https://zenodo.org/records/15258956`
