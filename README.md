@@ -7,7 +7,7 @@
 * `Ubuntu 22.04+`
 * `GCC >= 9.0`
 * `CUDA >= 11.0` and `nvcc >= 11.0`
-## Import Files/Directories
+## Important Files/Directories
 * dgl/ : contains latest `DGL` implementation.
 * pyg/ : contains latest `PyG` implementation.
 * GNNA/ : contains `GNNA` implementation.
