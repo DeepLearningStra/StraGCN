@@ -1,5 +1,6 @@
-# StraGCN: GPU-Accelerated Strassen's Sparse-Dense Matrix Multiplication for Graph Convolutional Network Training
-These codes provide the implementation of our paper `StraGCN`, along with baseline implementations of  `GNNA`, `PyG` and `DGL`.
+# StraGCN
+StraGCN is a high-performance framework that accelerates GCN training by adapting Strassen’s algorithm for SpMM. It introduces the horizontal fusion model to improve the data reuse of Strassen's SpMM. To learn more about how StraGCN works, please refer to our paper.
+These codes provide the implementation of `StraGCN`, along with baseline implementations of  `GNNA`, `PyG` and `DGL`.
 
 ## Hardware
 * CPU x86_64 with host memory >= 32GB. (Test on Intel Xeon Gold 5220 (16 cores) CPU with 128GB host memory)
