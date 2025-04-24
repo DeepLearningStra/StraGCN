@@ -1,5 +1,6 @@
 # StraGCN
-StraGCN is a high-performance framework that accelerates GCN training by adapting Strassen’s algorithm for SpMM. It introduces the horizontal fusion model to improve the data reuse of Strassen's SpMM. To learn more about how StraGCN works, please refer to our paper.
+StraGCN is a high-performance framework that accelerates GCN training by adapting Strassen’s algorithm for SpMM. StraGCN introduces the horizontal fusion model to improve the data reuse of Strassen's SpMM. In addition, StraGCN exploits the immutability of the adjacency matrix in GCNs to reuse intermediate results. Finally, StraGCN employs a two-stage partitioning strategy to address both intra- and inter-matrix load imbalance in Strassen's SpMM. To learn more about how StraGCN works, please refer to our paper.
+
 These codes provide the implementation of `StraGCN`, along with baseline implementations of  `GNNA`, `PyG` and `DGL`.
 
 ## Hardware
