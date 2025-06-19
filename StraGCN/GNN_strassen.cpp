@@ -2,6 +2,13 @@
 #include<torch/extension.h>
 #include<vector>
 
+
+torch::Tensor spmm_strassen_cuda(torch::Tensor A_rowPtr,
+                            torch::Tensor A_colIdx,
+                            torch::Tensor A_values,
+                            torch::Tensor offset,
+                            torch::Tensor X);
+
 torch::Tensor spmm_forward(
     torch::Tensor A_rowPtr,
     torch::Tensor A_colIdx,
