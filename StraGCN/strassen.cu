@@ -50,16 +50,19 @@ torch::Tensor spmm_strassen_cuda(torch::Tensor A_rowPtr,
         // dense add
         // add is right
         Add_total_s<<<BPG, TPB>>>(X.data_ptr<float>(), MB.data_ptr<float>(), halfm, halfn);
+        cudaDeviceSynchronize();
 
         // std::cout<<MB<<"\n";
 
         // spmm
         SPMM_total<<<spBPG, spTPB>>>(A_rowPtr.data_ptr<int>(), A_colIdx.data_ptr<int>(), A_values.data_ptr<float>(), offset.data_ptr<int>(), 
                                      MB.data_ptr<float>(), MT.data_ptr<float>(), halfm, halfn);
+        cudaDeviceSynchronize();
         
     }
 
     Add_finish_s<<<BPG, TPB>>>(MT.data_ptr<float>(), output.data_ptr<float>(), halfm, halfn);
+    cudaDeviceSynchronize();
 
     return output;
 }
