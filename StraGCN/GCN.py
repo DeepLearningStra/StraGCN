@@ -133,6 +133,10 @@ class myLinear(nn.Module):
     def __init__(self, input_size, output_size):
         super(myLinear, self).__init__()
         self.w = nn.Parameter(torch.randn(input_size, output_size))
+        self.reset__parameters()
+    def reset_parameters(self):
+        stdv = 1. / math.sqrt(self.weights.size(1))
+        self.w.data.uniform_(-stdv, stdv)
     def forward(self, x):
         return FunctionLinear.apply(x, self.w)
 
