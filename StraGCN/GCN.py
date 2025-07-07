@@ -24,7 +24,7 @@ print(datastr[iss])
 
 parser = argparse.ArgumentParser()
 
-parser.add_argument("--dataDir", type=str, default="./osdi-ae-graphs", help="the path to data")
+parser.add_argument("--dataDir", type=str, default="./presumdata", help="the path to data")
 parser.add_argument("--dataname", type=str, default=datastr[iss], help="dataset name")
 parser.add_argument("--dim", type=int, default=dims[iss], help="input embedding dimension")
 parser.add_argument("--hidden", type=int, default=hidden[hiss], help="hidden dimension size")
